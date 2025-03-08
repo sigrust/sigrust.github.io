@@ -1,6 +1,6 @@
 baseurl = "https://username.github.io"
 DefaultContentLanguage = "en"
-title = "Rust SIG"
+title = "SERust SIG"
 # Using theme as git submodule
 theme = "beautifulhugo"
 # Or when using theme as hugo module
