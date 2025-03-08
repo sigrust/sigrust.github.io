@@ -87,12 +87,12 @@ pygmentsCodefencesGuessSyntax = true
   # lastfm = "username"
 
 [[menu.main]]
-    name = "Activities"
+    name = "活动"
     url = ""
     weight = 1
 
 [[menu.main]]
-    name = "About"
+    name = "关于我们"
     url = "page/about/"
     weight = 3
 
