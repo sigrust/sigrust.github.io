@@ -20,7 +20,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "News & Information for Rust Developers"
+  subtitle = "CCF系统软件专委会 - Rust语言兴趣小组"
   mainSections = ["post","posts"]
   logo = "android-chrome-512x512.png" # Expecting square dimensions
   # favicon = "img/favicon.ico"
