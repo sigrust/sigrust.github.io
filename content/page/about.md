@@ -1,7 +1,7 @@
 ---
-title: About
+title: 关于SERust SIG
 subtitle: 
 comments: false
 ---
 
-## RUST SIG
+## SERUST SIG
