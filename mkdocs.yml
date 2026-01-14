@@ -1,0 +1,74 @@
+site_name: Rust教育工作组推荐课程
+site_url: https://sigrust.github.io/
+site_author: SERust SIG
+site_description: >-
+  Rust教育工作组推荐课程
+
+copyright: Copyright &copy; 2026 SERust SIG
+
+theme:
+  name: material
+  language: zh
+  static_templates:
+    - 404.html
+  favicon: images/favicon.ico
+  apple-touch-icon-precomposed: images/mobile_icon.png
+  include_search_page: false
+  search_index_only: true
+
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+
+plugins:
+  - search:
+      lang:
+        - zh
+  - git-revision-date:
+  - minify:
+      minify_html: true
+  - open-in-new-tab:
+
+extra:
+  analytics:
+    provider: google
+    property: G-KJB4RXSKZG
+
+nav:
+  - 首页: "index.md"
+  - Rust编程语言: "rust-programming.md"
+  - Rust与编译器: "rust-compiler.md"
+  - Rust与操作系统: "rust-os.md"
+  - Rust与数据库: "rust-database.md"
