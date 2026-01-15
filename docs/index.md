@@ -8,7 +8,7 @@
 
 ## 关于我们
 
-本站由 **CCF系统软件专委会 - Rust语言兴趣小组**（SERust SIG）维护，旨在为Rust学习者提供高质量的学习资源和课程推荐。
+本站由 **CCF系统软件专委会 - Rust语言兴趣小组**（Rust SIG）维护，旨在为Rust学习者提供高质量的学习资源和课程推荐。
 
 <div style="background: linear-gradient(135deg, rgba(206, 66, 43, 0.1) 0%, rgba(247, 166, 0, 0.1) 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #CE422B; margin: 20px 0;">
   <strong>🚀 为什么选择 Rust？</strong><br/>
