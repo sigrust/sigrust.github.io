@@ -1,27 +1,12 @@
 # Rust与操作系统
 
-## 课程简介
-
-本模块聚焦于使用Rust进行操作系统开发和系统编程。
-
 ## 推荐课程
+### 清华大学OS课程
+[课件](https://learningos.cn/os-lectures/)
+[项目仓库](https://github.com/LearningOS/os-lectures)
 
-*课程内容正在整理中，敬请期待...*
-
-## 学习主题
-
-1. 系统编程基础
-2. 操作系统原理
-3. 使用Rust开发操作系统
-4. 内存管理
-5. 并发与同步
-6. 设备驱动开发
-7. 嵌入式系统
-
-## 相关资源
-
+## 推荐教程 
 - [Writing an OS in Rust](https://os.phil-opp.com/)
-- [Rust嵌入式开发](https://rust-embedded.org/)
 
 ---
 
