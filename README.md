@@ -46,15 +46,16 @@ mkdocs build
 本项目配置了 GitHub Actions 自动部署流程：
 
 1. 当代码推送到 `master` 或 `main` 分支时，CI 工作流会自动触发
-2. 工作流会执行 `mkdocs gh-deploy` 命令
-3. 生成的静态文件会被推送到 `gh-pages` 分支
-4. GitHub Pages 会自动从 `gh-pages` 分支部署网站
+2. 工作流会执行 `mkdocs build` 构建静态网站
+3. 构建结果会通过 GitHub Actions 直接部署到 GitHub Pages
+4. 网站会自动更新
 
 ### GitHub Pages 配置要求
 
 确保仓库的 GitHub Pages 配置如下：
-- **Source**: Deploy from a branch
-- **Branch**: `gh-pages` / `(root)`
+- **Source**: GitHub Actions
+
+详细部署说明请参阅 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
 ## 文件结构
 
