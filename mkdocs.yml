@@ -28,15 +28,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light blue
-      accent: deep purple
+      primary: deep orange
+      accent: orange
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: deep purple
+      primary: deep orange
+      accent: orange
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -65,6 +65,9 @@ extra:
   analytics:
     provider: google
     property: G-KJB4RXSKZG
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - 首页: "index.md"

@@ -1,0 +1,151 @@
+/* Rust-themed custom styles */
+
+:root {
+  /* Rust official colors */
+  --rust-orange: #CE422B;
+  --rust-dark-orange: #A33520;
+  --rust-light-orange: #F74C00;
+  --rust-brown: #5C4033;
+  --rust-gray: #4A4A4A;
+  --rust-light-gray: #A0A0A0;
+  --rust-accent: #F7A600;
+}
+
+/* Override Material theme colors for light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--rust-orange);
+  --md-primary-fg-color--light: var(--rust-light-orange);
+  --md-primary-fg-color--dark: var(--rust-dark-orange);
+  --md-accent-fg-color: var(--rust-accent);
+}
+
+/* Override Material theme colors for dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--rust-light-orange);
+  --md-primary-fg-color--light: var(--rust-orange);
+  --md-primary-fg-color--dark: var(--rust-dark-orange);
+  --md-accent-fg-color: var(--rust-accent);
+}
+
+/* Homepage hero section styling */
+.md-typeset h1 {
+  color: var(--rust-orange);
+  font-weight: bold;
+}
+
+/* Style the emoji sections on homepage */
+.md-typeset h3 {
+  color: var(--rust-dark-orange);
+  border-left: 4px solid var(--rust-orange);
+  padding-left: 12px;
+  margin-left: -16px;
+}
+
+/* Add Rust-themed accent to links */
+.md-typeset a {
+  color: var(--rust-orange);
+}
+
+.md-typeset a:hover {
+  color: var(--rust-light-orange);
+}
+
+/* Style code blocks with Rust theme */
+.md-typeset code {
+  background-color: rgba(206, 66, 43, 0.1);
+  border: 1px solid rgba(206, 66, 43, 0.2);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(247, 76, 0, 0.15);
+  border: 1px solid rgba(247, 76, 0, 0.3);
+}
+
+/* Add subtle Rust-themed background gradient to main content */
+.md-content {
+  position: relative;
+}
+
+.md-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(206, 66, 43, 0.03) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Style navigation items with Rust theme */
+.md-nav__link--active {
+  color: var(--rust-orange) !important;
+}
+
+.md-nav__link:hover {
+  color: var(--rust-light-orange);
+}
+
+/* Add Rust-themed styling to cards/sections */
+.md-typeset h2 {
+  color: var(--rust-dark-orange);
+  border-bottom: 2px solid var(--rust-orange);
+  padding-bottom: 8px;
+}
+
+/* Footer styling */
+.md-footer {
+  background-color: var(--rust-brown);
+}
+
+/* Header search and navigation */
+.md-search__input {
+  border: 1px solid rgba(206, 66, 43, 0.3);
+}
+
+.md-search__input:focus {
+  border-color: var(--rust-orange);
+}
+
+/* Buttons and interactive elements */
+.md-typeset .md-button {
+  background-color: var(--rust-orange);
+  border-color: var(--rust-orange);
+  color: white;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--rust-light-orange);
+  border-color: var(--rust-light-orange);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--rust-orange);
+  border-color: var(--rust-orange);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--rust-dark-orange);
+  border-color: var(--rust-dark-orange);
+}
+
+/* Table of contents styling */
+.md-nav--secondary .md-nav__link--active {
+  border-left-color: var(--rust-orange);
+}
+
+/* Admonitions with Rust theme */
+.md-typeset .admonition {
+  border-left-color: var(--rust-orange);
+}
+
+/* Scroll to top button */
+.md-top {
+  background-color: var(--rust-orange);
+}
+
+.md-top:hover {
+  background-color: var(--rust-light-orange);
+}
