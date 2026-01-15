@@ -8,10 +8,6 @@ site_description: >-
 repo_url: https://github.com/sigrust/sigrust.github.io
 repo_name: sigrust/sigrust.github.io
 
-# 文档目录配置
-docs_dir: docs
-site_dir: site
-
 copyright: Copyright &copy; 2026 Rust SIG
 
 theme:
