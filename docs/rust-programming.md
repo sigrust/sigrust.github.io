@@ -1,29 +1,9 @@
 # Rust编程语言
 
-## 课程简介
+## 官方教程
+[The Book](https://doc.rust-lang.org/book/)
+[rustlings](https://rustlings.rust-lang.org/)
 
-本模块包含Rust编程语言的基础到进阶课程，帮助您全面掌握Rust语言。
+## 推荐教材
 
 ## 推荐课程
-
-*课程内容正在整理中，敬请期待...*
-
-## 学习路线
-
-1. Rust基础语法
-2. 所有权与借用
-3. 生命周期
-4. 泛型与trait
-5. 错误处理
-6. 并发编程
-7. 异步编程
-
-## 相关资源
-
-- [Rust官方文档](https://www.rust-lang.org/)
-- [Rust程序设计语言](https://doc.rust-lang.org/book/)
-
----
-
-*内容持续更新中*
-
