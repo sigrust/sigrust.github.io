@@ -1,24 +1,19 @@
 # Rust与编译器
 
-## 课程简介
-
-本模块介绍Rust在编译器开发中的应用，以及如何理解和使用Rust编译器。
-
 ## 推荐课程
+### 北京大学编译原理
+[北大编译实践在线文档](https://pku-minic.github.io/online-doc/#/preface/)
 
-*课程内容正在整理中，敬请期待...*
+### 复旦大学编译原理
 
-## 学习主题
+### 南京大学编译原理
 
-1. Rust编译器原理
-2. 编译原理基础
-3. 使用Rust开发编译器
-4. LLVM与Rust
-5. 类型系统与类型检查
-6. 中间表示与优化
+## 工具推荐
+[pest](https://github.com/pest-parser/pest)  
+[lalrpop](https://lalrpop.github.io/lalrpop/)
+
 
 ## 相关资源
-
 - [Rust编译器开发指南](https://rustc-dev-guide.rust-lang.org/)
 
 ---
