@@ -1,8 +1,8 @@
-site_name: Rust教育工作组推荐课程
+site_name: Rust学习资源
 site_url: https://sigrust.github.io/
 site_author: Rust SIG
 site_description: >-
-  Rust学习资源
+  Rust学习资源和课程推荐
 
 # 仓库配置
 repo_url: https://github.com/sigrust/sigrust.github.io
