@@ -1,39 +1,18 @@
-# Rust教育工作组推荐课程
+# Rust课程和学习资料推荐
 
 <div style="text-align: center; padding: 20px 0;">
   <span style="font-size: 4em; color: #CE422B;">🦀</span>
 </div>
 
-欢迎来到Rust教育工作组推荐课程平台！
+<div style="background: linear-gradient(135deg, rgba(206, 66, 43, 0.1) 0%, rgba(247, 166, 0, 0.1) 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #CE422B; margin: 20px 0;">
+  <strong>🚀 为什么选择 Rust？</strong><br/>
+  Rust与C/C++同为系统编程语言。由于诞生较晚，Rust在语法和功能设计时融入了许多新的特性，被学术界和工业界公认具备更佳的内存安全性和可靠性。
+</div>
+
 
 ## 关于我们
 
-本站由 **CCF系统软件专委会 - Rust语言兴趣小组**（Rust SIG）维护，旨在为Rust学习者提供高质量的学习资源和课程推荐。
-
-<div style="background: linear-gradient(135deg, rgba(206, 66, 43, 0.1) 0%, rgba(247, 166, 0, 0.1) 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #CE422B; margin: 20px 0;">
-  <strong>🚀 为什么选择 Rust？</strong><br/>
-  Rust 是一门兼具高性能和安全性的系统编程语言，广泛应用于系统软件、Web服务、嵌入式系统等领域。它的所有权系统和零成本抽象使其成为现代软件开发的理想选择。
-</div>
-
-## 学习路径
-
-我们精心整理了以下四个主要学习方向，请从上方导航栏选择您感兴趣的方向，开始您的Rust学习之旅！
-
-### 🦀 Rust编程语言
-从零开始学习Rust语言的基础知识、核心概念和最佳实践。
-
-### 🔧 Rust与编译器
-深入了解Rust编译器原理、编译技术以及如何使用Rust开发编译器。
-
-### 💻 Rust与操作系统
-学习如何使用Rust进行系统编程和操作系统开发。
-
-### 🗄️ Rust与数据库
-探索Rust在数据库系统开发中的应用和相关技术。
-
-<div style="text-align: center; margin: 30px 0; padding: 20px; background: rgba(206, 66, 43, 0.05); border-radius: 8px;">
-  <p style="color: #CE422B; font-weight: bold; margin: 0;">🎯 准备好了吗？开始探索 Rust 的世界！</p>
-</div>
+本站由 **Rust语言兴趣小组**维护，旨在为Rust学习者提供高质量的学习资源和课程推荐。
 
 ---
 
