@@ -1,10 +1,10 @@
 site_name: Rust教育工作组推荐课程
 site_url: https://sigrust.github.io/
-site_author: SERust SIG
+site_author: Rust SIG
 site_description: >-
   Rust教育工作组推荐课程
 
-copyright: Copyright &copy; 2026 SERust SIG
+copyright: Copyright &copy; 2026 Rust SIG
 
 theme:
   name: material
@@ -24,6 +24,7 @@ theme:
     - search.share
     - search.suggest
     - content.code.annotate
+    - toc.integrate
 
   palette:
     - media: "(prefers-color-scheme: light)"
