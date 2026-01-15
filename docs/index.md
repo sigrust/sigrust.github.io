@@ -17,7 +17,7 @@
 
 ## 学习路径
 
-我们精心整理了以下四个主要学习方向，帮助您系统地学习Rust及其在各个领域的应用：
+我们精心整理了以下四个主要学习方向，请从上方导航栏选择您感兴趣的方向，开始您的Rust学习之旅！
 
 ### 🦀 Rust编程语言
 从零开始学习Rust语言的基础知识、核心概念和最佳实践。
@@ -30,10 +30,6 @@
 
 ### 🗄️ Rust与数据库
 探索Rust在数据库系统开发中的应用和相关技术。
-
-## 开始学习
-
-请从上方导航栏选择您感兴趣的学习方向，开始您的Rust学习之旅！
 
 <div style="text-align: center; margin: 30px 0; padding: 20px; background: rgba(206, 66, 43, 0.05); border-radius: 8px;">
   <p style="color: #CE422B; font-weight: bold; margin: 0;">🎯 准备好了吗？开始探索 Rust 的世界！</p>
