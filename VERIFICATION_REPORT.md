@@ -57,7 +57,6 @@ docs/
 - Build and deploy steps are properly configured
 
 ✅ **Latest build successful:**
-- Run ID: 21051864313
 - Status: Completed successfully
 - Build time: ~0.3 seconds
 - All steps completed without errors
@@ -90,7 +89,7 @@ docs/
 ✅ **Build test:**
 ```
 INFO    -  Cleaning site directory
-INFO    -  Building documentation to directory: /home/runner/work/sigrust.github.io/sigrust.github.io/site
+INFO    -  Building documentation to directory: ./site
 INFO    -  Documentation built in 0.29 seconds
 ```
 
