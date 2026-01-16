@@ -5,7 +5,7 @@
 [北大编译实践在线文档](https://pku-minic.github.io/online-doc/#/preface/)
 
 ### 复旦大学编译原理
-[编译授课笔记](http://tea-compiler.github.io/blob/main/notes/%E7%BC%96%E8%AF%91%E6%8E%88%E8%AF%BE%E7%AC%94%E8%AE%B0_v1_0.pdf)  
+[编译授课笔记](https://tea-compiler.github.io/notes/%E7%BC%96%E8%AF%91%E6%8E%88%E8%AF%BE%E7%AC%94%E8%AE%B0_v1_0.pdf)  
 [课程主页](http://tea-compiler.github.io/)
 
 ### 南京大学编译原理
