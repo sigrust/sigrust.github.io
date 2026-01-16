@@ -9,6 +9,11 @@
   --rust-gray: #4A4A4A;
   --rust-light-gray: #A0A0A0;
   --rust-accent: #F7A600;
+  
+  /* RGB values for opacity variations */
+  --rust-orange-rgb: 206, 66, 43;
+  --rust-light-orange-rgb: 247, 76, 0;
+  --rust-accent-rgb: 247, 166, 0;
 }
 
 /* Override Material theme colors for light mode */
@@ -148,4 +153,80 @@
 
 .md-top:hover {
   background-color: var(--rust-light-orange);
+}
+
+/* Homepage hero section */
+.hero-emoji {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 4em;
+  color: var(--rust-orange);
+}
+
+/* Callout box with Rust theme */
+.rust-callout {
+  background: linear-gradient(135deg, rgba(var(--rust-orange-rgb), 0.1) 0%, rgba(var(--rust-accent-rgb), 0.1) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--rust-orange);
+  margin: 20px 0;
+}
+
+/* Course cards grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.course-card {
+  background: linear-gradient(135deg, rgba(var(--rust-orange-rgb), 0.05) 0%, rgba(var(--rust-accent-rgb), 0.05) 100%);
+  border: 2px solid rgba(var(--rust-orange-rgb), 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(var(--rust-orange-rgb), 0.2);
+  border-color: var(--rust-orange);
+}
+
+.course-card-icon {
+  font-size: 3em;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.course-card-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--rust-orange);
+  margin-bottom: 8px;
+}
+
+.course-card-description {
+  color: var(--rust-gray);
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Dark mode adjustments for course cards */
+[data-md-color-scheme="slate"] .course-card {
+  background: linear-gradient(135deg, rgba(var(--rust-light-orange-rgb), 0.1) 0%, rgba(var(--rust-accent-rgb), 0.1) 100%);
+  border-color: rgba(var(--rust-light-orange-rgb), 0.3);
+}
+
+[data-md-color-scheme="slate"] .course-card:hover {
+  border-color: var(--rust-light-orange);
+  box-shadow: 0 8px 16px rgba(var(--rust-light-orange-rgb), 0.3);
+}
+
+[data-md-color-scheme="slate"] .course-card-description {
+  color: var(--rust-light-gray);
 }
