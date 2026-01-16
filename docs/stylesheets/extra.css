@@ -79,15 +79,6 @@
   z-index: -1;
 }
 
-/* Style navigation items with Rust theme */
-.md-nav__link--active {
-  color: var(--rust-orange) !important;
-}
-
-.md-nav__link:hover {
-  color: var(--rust-light-orange);
-}
-
 /* Add Rust-themed styling to cards/sections */
 .md-typeset h2 {
   color: var(--rust-dark-orange);
@@ -131,11 +122,6 @@
   border-color: var(--rust-dark-orange);
 }
 
-/* Table of contents styling */
-.md-nav--secondary .md-nav__link--active {
-  border-left-color: var(--rust-orange);
-}
-
 /* Admonitions with Rust theme */
 .md-typeset .admonition {
   border-left-color: var(--rust-orange);
@@ -177,4 +163,261 @@
 .feedback-section a:hover {
   color: var(--rust-light-orange);
   border-bottom-color: var(--rust-light-orange);
+}
+
+/* ============================================
+   SIDEBAR ENHANCEMENTS
+   ============================================ */
+
+/* Primary sidebar styling */
+.md-sidebar--primary {
+  background: linear-gradient(180deg, rgba(206, 66, 43, 0.02) 0%, transparent 50%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Sidebar scrollwrap for smooth scrolling */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rust-orange) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 6px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--rust-orange);
+  border-radius: 3px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background: var(--rust-light-orange);
+}
+
+/* Navigation title styling */
+.md-nav__title {
+  background-color: var(--rust-orange);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(206, 66, 43, 0.1);
+}
+
+.md-nav__title .md-nav__button {
+  color: white;
+}
+
+/* Primary navigation list */
+.md-nav--primary .md-nav__list {
+  padding: 0.5rem 0;
+}
+
+/* Navigation items */
+.md-nav__item {
+  padding: 0.125rem 0;
+}
+
+/* Navigation links with enhanced styling */
+.md-nav__link {
+  padding: 0.75rem 1rem;
+  margin: 0.125rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+/* Hover effect for navigation links */
+.md-nav__link:hover {
+  background-color: rgba(206, 66, 43, 0.08);
+  color: var(--rust-orange);
+  transform: translateX(4px);
+  box-shadow: 0 1px 3px rgba(206, 66, 43, 0.1);
+}
+
+/* Active navigation link styling */
+.md-nav__link--active {
+  background-color: rgba(206, 66, 43, 0.12);
+  color: var(--rust-orange) !important;
+  font-weight: 700;
+  border-left: 3px solid var(--rust-orange);
+  padding-left: calc(1rem - 3px);
+}
+
+.md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: linear-gradient(180deg, var(--rust-orange), var(--rust-light-orange));
+  border-radius: 0 2px 2px 0;
+}
+
+/* Focus styles for accessibility */
+.md-nav__link:focus {
+  outline: 2px solid var(--rust-orange);
+  outline-offset: 2px;
+}
+
+/* Secondary navigation (TOC) styling */
+.md-nav--secondary {
+  border-left: 2px solid rgba(206, 66, 43, 0.15);
+  margin-left: 0.5rem;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  border-left-color: var(--rust-orange);
+  border-left-width: 3px;
+  background-color: rgba(206, 66, 43, 0.06);
+}
+
+/* Sidebar for mobile/tablet - drawer style */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    background: white;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  [data-md-color-scheme="slate"] .md-sidebar--primary {
+    background: #1e1e1e;
+  }
+  
+  .md-sidebar--primary .md-nav__title {
+    background: linear-gradient(135deg, var(--rust-orange), var(--rust-dark-orange));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+/* Desktop sidebar refinements */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    border-right: 1px solid rgba(206, 66, 43, 0.1);
+  }
+  
+  .md-nav__link {
+    margin: 0.125rem 0.75rem;
+  }
+}
+
+/* TOC sidebar on the right */
+.md-sidebar--secondary {
+  border-left: 1px solid rgba(206, 66, 43, 0.1);
+}
+
+.md-sidebar--secondary .md-nav__title {
+  background: transparent;
+  color: var(--rust-dark-orange);
+  font-weight: 600;
+  border-bottom: 2px solid var(--rust-orange);
+}
+
+/* Navigation source (GitHub link) */
+.md-nav__source {
+  background-color: rgba(206, 66, 43, 0.05);
+  border-radius: 6px;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  transition: background-color 0.25s;
+}
+
+.md-nav__source:hover {
+  background-color: rgba(206, 66, 43, 0.1);
+}
+
+/* Overlay for mobile sidebar */
+.md-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.3s;
+}
+
+/* Smooth transitions for drawer */
+[data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+  transform: translateX(0);
+}
+
+/* Dark mode adjustments for sidebar */
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  background-color: rgba(247, 76, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  background-color: rgba(247, 76, 0, 0.18);
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary {
+  border-left-color: rgba(247, 76, 0, 0.2);
+}
+
+/* Icon animation on hover */
+.md-nav__icon {
+  transition: transform 0.25s;
+}
+
+.md-nav__link:hover .md-nav__icon {
+  transform: translateX(2px);
+}
+
+/* Nested navigation items */
+.md-nav .md-nav__list .md-nav__list {
+  padding-left: 1rem;
+}
+
+.md-nav .md-nav__list .md-nav__list .md-nav__link {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Search highlight in navigation */
+.md-nav__link[data-md-state="blur"] {
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+/* Improved spacing for navigation sections */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  color: var(--rust-dark-orange);
+  margin-top: 0.5rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid rgba(206, 66, 43, 0.1);
+}
+
+.md-nav__item--section:first-child > .md-nav__link {
+  border-top: none;
+  margin-top: 0;
+}
+
+/* Mobile-specific improvements */
+@media screen and (max-width: 44.9375em) {
+  .md-nav__link {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .md-nav__item {
+    padding: 0.0625rem 0;
+  }
+}
+
+/* Tablet-specific improvements */
+@media screen and (min-width: 45em) and (max-width: 76.1875em) {
+  .md-nav__link {
+    padding: 0.8rem 0.95rem;
+  }
 }

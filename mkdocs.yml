@@ -24,6 +24,11 @@ theme:
     - header.autohide
     - navigation.tracking
     - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
     - search.highlight
     - search.share
     - search.suggest
