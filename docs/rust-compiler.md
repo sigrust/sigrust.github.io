@@ -9,6 +9,7 @@
 [课程主页](http://tea-compiler.github.io/)
 
 ### 南京大学编译原理
+[开放训练营](https://opencamp.cn/rustcompiler/camp/2025fall)
 
 ## 工具推荐
 [pest](https://github.com/pest-parser/pest)  
