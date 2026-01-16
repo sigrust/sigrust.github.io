@@ -9,6 +9,11 @@
   --rust-gray: #4A4A4A;
   --rust-light-gray: #A0A0A0;
   --rust-accent: #F7A600;
+  
+  /* RGB values for opacity variations */
+  --rust-orange-rgb: 206, 66, 43;
+  --rust-light-orange-rgb: 247, 76, 0;
+  --rust-accent-rgb: 247, 166, 0;
 }
 
 /* Override Material theme colors for light mode */
@@ -160,7 +165,7 @@
 
 /* Callout box with Rust theme */
 .rust-callout {
-  background: linear-gradient(135deg, rgba(206, 66, 43, 0.1) 0%, rgba(247, 166, 0, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(var(--rust-orange-rgb), 0.1) 0%, rgba(var(--rust-accent-rgb), 0.1) 100%);
   padding: 20px;
   border-radius: 8px;
   border-left: 4px solid var(--rust-orange);
@@ -176,8 +181,8 @@
 }
 
 .course-card {
-  background: linear-gradient(135deg, rgba(206, 66, 43, 0.05) 0%, rgba(247, 166, 0, 0.05) 100%);
-  border: 2px solid rgba(206, 66, 43, 0.2);
+  background: linear-gradient(135deg, rgba(var(--rust-orange-rgb), 0.05) 0%, rgba(var(--rust-accent-rgb), 0.05) 100%);
+  border: 2px solid rgba(var(--rust-orange-rgb), 0.2);
   border-radius: 12px;
   padding: 24px;
   transition: all 0.3s ease;
@@ -188,7 +193,7 @@
 
 .course-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(206, 66, 43, 0.2);
+  box-shadow: 0 8px 16px rgba(var(--rust-orange-rgb), 0.2);
   border-color: var(--rust-orange);
 }
 
@@ -213,13 +218,13 @@
 
 /* Dark mode adjustments for course cards */
 [data-md-color-scheme="slate"] .course-card {
-  background: linear-gradient(135deg, rgba(247, 76, 0, 0.1) 0%, rgba(247, 166, 0, 0.1) 100%);
-  border-color: rgba(247, 76, 0, 0.3);
+  background: linear-gradient(135deg, rgba(var(--rust-light-orange-rgb), 0.1) 0%, rgba(var(--rust-accent-rgb), 0.1) 100%);
+  border-color: rgba(var(--rust-light-orange-rgb), 0.3);
 }
 
 [data-md-color-scheme="slate"] .course-card:hover {
   border-color: var(--rust-light-orange);
-  box-shadow: 0 8px 16px rgba(247, 76, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(var(--rust-light-orange-rgb), 0.3);
 }
 
 [data-md-color-scheme="slate"] .course-card-description {
