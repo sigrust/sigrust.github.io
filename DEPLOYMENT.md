@@ -40,9 +40,9 @@
 
 如果网站未正确显示，请检查:
 
-1. **GitHub Pages 配置**: 确认 Source 设置为 `gh-pages` 分支
-2. **gh-pages 分支**: 确认该分支存在且包含正确的文件
-3. **GitHub Actions**: 检查工作流运行状态，确认无错误
+1. **GitHub Pages 配置**: 确认 Source 设置为 "GitHub Actions"
+2. **GitHub Actions 工作流**: 检查工作流运行状态，确认无错误
+3. **工作流权限**: 确认仓库 Settings → Actions → General → Workflow permissions 设置为 "Read and write permissions"
 
 ## 手动部署（可选）
 
