@@ -37,7 +37,7 @@ jobs:
         run: |
           echo "Validating MkDocs configuration..."
           mkdocs --version
-          python -c "import yaml; yaml.safe_load(open('mkdocs.yml'))" && echo "✓ mkdocs.yml is valid YAML"
+          python -c "import yaml; from pathlib import Path; yaml.safe_load(Path('mkdocs.yml').read_text())" && echo "✓ mkdocs.yml is valid YAML"
 
       - name: Build site
         run: |
@@ -48,8 +48,19 @@ jobs:
       - name: Verify build output
         run: |
           echo "Verifying build output..."
-          [ -f "site/index.html" ] && echo "✓ site/index.html exists" || (echo "✗ site/index.html not found" && exit 1)
-          [ -d "site/assets" ] && echo "✓ site/assets directory exists" || echo "⚠ site/assets directory not found"
+          if [ -f "site/index.html" ]; then
+            echo "✓ site/index.html exists"
+          else
+            echo "✗ site/index.html not found"
+            exit 1
+          fi
+          
+          if [ -d "site/assets" ]; then
+            echo "✓ site/assets directory exists"
+          else
+            echo "⚠ site/assets directory not found"
+          fi
+          
           echo "Site directory contents:"
           ls -la site/
           echo "✓ Build verification complete"
