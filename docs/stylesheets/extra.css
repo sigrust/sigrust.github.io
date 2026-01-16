@@ -79,15 +79,6 @@
   z-index: -1;
 }
 
-/* Style navigation items with Rust theme */
-.md-nav__link--active {
-  color: var(--rust-orange) !important;
-}
-
-.md-nav__link:hover {
-  color: var(--rust-light-orange);
-}
-
 /* Add Rust-themed styling to cards/sections */
 .md-typeset h2 {
   color: var(--rust-dark-orange);
@@ -129,11 +120,6 @@
 .md-typeset .md-button--primary:hover {
   background-color: var(--rust-dark-orange);
   border-color: var(--rust-dark-orange);
-}
-
-/* Table of contents styling */
-.md-nav--secondary .md-nav__link--active {
-  border-left-color: var(--rust-orange);
 }
 
 /* Admonitions with Rust theme */
