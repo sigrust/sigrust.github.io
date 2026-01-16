@@ -28,7 +28,6 @@ theme:
     - search.share
     - search.suggest
     - content.code.annotate
-    - toc.integrate
 
   palette:
     - media: "(prefers-color-scheme: light)"
