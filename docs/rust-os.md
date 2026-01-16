@@ -13,6 +13,6 @@
 
 *内容持续更新中*
 
-<footer>
+<div class="feedback-section">
     <p>帮助我们改进内容！ <a href="https://github.com/sigrust/sigrust.github.io/issues" target="_blank" rel="noopener noreferrer">点击这里提交你的建议</a></p>
-</footer>
+</div>

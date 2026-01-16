@@ -149,3 +149,32 @@
 .md-top:hover {
   background-color: var(--rust-light-orange);
 }
+
+/* Feedback section styling */
+.feedback-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid var(--rust-orange);
+  background-color: rgba(206, 66, 43, 0.05);
+  border-radius: 4px;
+}
+
+.feedback-section p {
+  margin: 0;
+  text-align: center;
+  color: var(--rust-dark-orange);
+  font-size: 0.9em;
+}
+
+.feedback-section a {
+  color: var(--rust-orange);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.25s;
+}
+
+.feedback-section a:hover {
+  color: var(--rust-light-orange);
+  border-bottom-color: var(--rust-light-orange);
+}
