@@ -13,6 +13,7 @@ copyright: Copyright &copy; 2026 Rust SIG
 theme:
   name: material
   language: zh
+  custom_dir: overrides
   static_templates:
     - 404.html
   favicon: images/favicon.ico

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Rust与数据库
 
 ## 推荐课程

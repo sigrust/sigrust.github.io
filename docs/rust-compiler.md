@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Rust与编译器
 
 ## 推荐课程

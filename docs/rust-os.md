@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Rust与操作系统
 
 ## 推荐课程

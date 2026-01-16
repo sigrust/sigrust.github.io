@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Rust编程语言
 
 ## 官方教程
