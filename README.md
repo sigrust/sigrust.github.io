@@ -52,10 +52,17 @@ mkdocs build
 
 ### GitHub Pages 配置要求
 
-确保仓库的 GitHub Pages 配置如下：
-- **Source**: GitHub Actions
+**⚠️ 重要**: 确保仓库的 GitHub Pages 配置正确，否则网站无法正常显示！
 
-详细部署说明请参阅 [DEPLOYMENT.md](DEPLOYMENT.md)。
+进入仓库设置页面配置:
+1. 访问 `https://github.com/sigrust/sigrust.github.io/settings/pages`
+2. 在 **Source** 部分，选择 **"GitHub Actions"**（而非 "Deploy from a branch"）
+3. 保存配置
+
+详细部署说明请参阅:
+- [DEPLOYMENT.md](DEPLOYMENT.md) - 完整部署指南
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - 故障排除指南
+- [VERIFICATION.md](VERIFICATION.md) - 验证清单
 
 ## 文件结构
 
