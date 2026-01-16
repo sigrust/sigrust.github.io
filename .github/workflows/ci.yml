@@ -30,8 +30,40 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: pip3 install -U -r requirements.txt
-      - run: mkdocs build
+      - name: Install dependencies
+        run: pip3 install -U -r requirements.txt
+
+      - name: Validate MkDocs configuration
+        run: |
+          echo "Validating MkDocs configuration..."
+          mkdocs --version
+          python -c "import yaml; from pathlib import Path; yaml.safe_load(Path('mkdocs.yml').read_text())" && echo "✓ mkdocs.yml is valid YAML"
+
+      - name: Build site
+        run: |
+          echo "Building MkDocs site..."
+          mkdocs build --verbose --strict
+          echo "✓ Build completed successfully"
+
+      - name: Verify build output
+        run: |
+          echo "Verifying build output..."
+          if [ -f "site/index.html" ]; then
+            echo "✓ site/index.html exists"
+          else
+            echo "✗ site/index.html not found"
+            exit 1
+          fi
+          
+          if [ -d "site/assets" ]; then
+            echo "✓ site/assets directory exists"
+          else
+            echo "⚠ site/assets directory not found"
+          fi
+          
+          echo "Site directory contents:"
+          ls -la site/
+          echo "✓ Build verification complete"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -41,3 +73,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Display deployment info
+        if: always()
+        run: |
+          echo "================================================"
+          echo "Deployment Information"
+          echo "================================================"
+          echo "Site URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "Deployment Status: ${{ job.status }}"
+          echo "================================================"
+          echo ""
+          echo "If the site is not displaying correctly, please check:"
+          echo "1. GitHub Pages Source is set to 'GitHub Actions' in Settings → Pages"
+          echo "2. Workflow permissions are set to 'Read and write' in Settings → Actions"
+          echo "3. Wait 1-2 minutes for deployment to complete"
+          echo "4. Clear browser cache or use incognito mode"
+          echo ""
+          echo "For detailed troubleshooting, see TROUBLESHOOTING.md"
+          echo "================================================"
