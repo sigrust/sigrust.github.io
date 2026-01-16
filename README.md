@@ -50,6 +50,10 @@ mkdocs build
 3. 构建结果会通过 GitHub Actions 直接部署到 GitHub Pages
 4. 网站会自动更新
 
+### 首次设置
+
+如果这是您第一次设置此项目，请参阅 [SETUP.md](SETUP.md) 获取详细的设置指南。
+
 ### GitHub Pages 配置要求
 
 **⚠️ 重要**: 确保仓库的 GitHub Pages 配置正确，否则网站无法正常显示！
